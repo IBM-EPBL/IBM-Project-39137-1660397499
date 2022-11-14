@@ -1,6 +1,4 @@
-# IBM-Project-39137-1660397499
-
-Personal Expense Tracker Application
+# Personal Expense Tracker Application
                                     
 Software Required:
                                         
