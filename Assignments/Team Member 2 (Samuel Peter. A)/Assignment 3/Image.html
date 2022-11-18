@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<style>
+		.images {
+			display: flex;
+			flex-wrap: wrap;
+			margin: 0 50px;
+			padding: 30px;
+		}
+
+		.photo {
+			max-width: 31.333%;
+			padding: 0 10px;
+			height: 240px;
+		}
+
+		.photo img {
+			width: 100%;
+			height: 100%;
+		}
+	</style>
+<link rel="stylesheet" href="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/style.css">
+<script>
+  window.watsonAssistantChatOptions = {
+    integrationID: "a7f74c8f-626f-43ce-8325-79776b1d4f96", // The ID of this integration.
+    region: "jp-tok", // The region your integration is hosted in.
+    serviceInstanceID: "7f388016-5156-4c59-b68b-74df182d5b6f", // The ID of your service instance.
+    onLoad: function(instance) { instance.render(); }
+  };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+    document.head.appendChild(t);
+  });
+</script>
+</head>
+
+<body>
+	<center>
+	<h1>
+	Personal Expense Tracker</h1></center>
+	<div class="images">
+		<div class="photo">
+			<img src="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/PET%206%20images.jpg" alt="photo" />
+		</div>
+
+		<div class="photo">
+			<img src="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/PET%20images%20(1).jpg" alt="photo" />
+		</div>
+		
+		<div class="photo">
+			<img src="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/PET%20images%20(1).png" alt="photo" />
+		</div>
+
+		<div class="photo">
+			<img src="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/PET%20images%20(2).jpg" alt="photo" />
+		</div>
+
+		<div class="photo">
+			<img src="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/PET%20images%20(1).jpg" alt="photo" />
+		</div>
+
+		<div class="photo">
+			<img src="https://etleo.s3.jp-tok.cloud-object-storage.appdomain.cloud/PET%20images%20(3).jpg" alt="photo" />
+		</div>
+	</div>
+</body>
+
+</html>
