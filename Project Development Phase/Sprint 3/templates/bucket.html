@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script>
+        window.watsonAssistantChatOptions = {
+          integrationID: "aece621b-d64c-410c-8ee7-c6d6e55e1cd7", // The ID of this integration.
+          region: "au-syd", // The region your integration is hosted in.
+          serviceInstanceID: "60891088-74bc-4877-8e21-d7516c672e70", // The ID of your service instance.
+          onLoad: function(instance) { instance.render(); }
+        };
+        setTimeout(function(){
+          const t=document.createElement('script');
+          t.src="https://web-chat.global.assistant.watson.appdomain.cloud/versions/" + (window.watsonAssistantChatOptions.clientVersion || 'latest') + "/WatsonAssistantChatEntry.js";
+          document.head.appendChild(t);
+        });
+      </script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://personal-expence-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/mystyle.css">
+</head>
+<body style="background-color: black;">
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+    <img src="https://personal-expence-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/image%201.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <img src="https://personal-expence-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/image%202.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <img src="https://personal-expence-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/image%203.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <img src="https://personal-expence-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/image%204.png" style="width:100%">
+</div>
+
+<div class="mySlides fade">
+    <img src="https://personal-expence-tracker.s3.jp-tok.cloud-object-storage.appdomain.cloud/image%205.png" style="width:100%">
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">❮</a>
+<a class="next" onclick="plusSlides(1)">❯</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+
+    <div class="container" style="background-color:#f1f1f1">
+    <button type="button" onclick="javascript:window.location='/';" class="cancelbtn">Back</button>
+    </div>
+
+</body>
+</html> 
